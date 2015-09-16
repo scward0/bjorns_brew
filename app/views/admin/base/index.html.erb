@@ -1,0 +1,13 @@
+<h5>All Pets of the Week</h5>
+
+<% @pet_of_the_weeks.each do |pet| %>
+  <%= image_tag pet.avatar.url %>
+  <br>
+  <%= pet.name %>
+  <br>
+  <%= pet.age %>
+  <br>
+  <%= pet.description %>
+  <br>
+  <br>
+<% end %>

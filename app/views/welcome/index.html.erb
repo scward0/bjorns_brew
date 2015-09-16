@@ -1,0 +1,193 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><%= image_tag("bjorns_logo_small.png") %></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Menu</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+        <div class="row">
+          <div class="col s5 white">
+          </div>
+          <div class="col offset-s1 s5 white">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="parallax grey darken-1"><%= image_tag("background1.jpg") %></div>
+</div>
+
+<div class="container ">
+  <div class="section">
+    <div class="row">
+      <div class="col s5 grey blog-div z-depth-5">
+        <%= render partial: "blog", locals: {posts: @posts} %>
+      </div>
+      <div class="col s5 offset-s1 grey z-depth-5">
+        <%= render partial: "pet_of_the_week/this_week", locals: {this_weeks_pet: @this_weeks_pet} %>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <%= render partial: "pet_of_the_week/submit", locals: {pet_of_the_week: @pet_of_the_week} %>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+        <div class="row">
+          <div class="col s5 white">
+          </div>
+          <div class="col offset-s1 s5 white">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="parallax grey darken-1"><%= image_tag("background2.jpg") %></div>
+</div>
+
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s5">
+        <h1>Our Menu</h1>
+      </div>
+      <div class="col s5 offset-1  z-depth-5">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <%= image_tag("bjorns_logo.jpg") %>
+              <div class="caption center-align">
+                <h3>Hot Beverages!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <%= image_tag("bjorns_logo.jpg") %>
+              <div class="caption left-align">
+                <h3>Cold Beverages</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <%= image_tag("bjorns_logo.jpg") %>
+              <div class="caption right-align">
+                <h3>Snacks</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <%= image_tag("bjorns_logo.jpg") %>
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row">
+        <div class="col s5 white">
+          <h3>Charities</h3>
+        </div>
+        <div class="col offset-s1 s5 white">
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:42.3148148148% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/7oHWDtqY3J/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">Repost from one of our most loyal customers Camille Keys. &#34;Talia Keys never plays a show without her coffee from Bjorn&#39;s Brew.  Best coffee in town.  Great show, great friends and a beautiful backdrop at Alta.&#34;</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Bjorn&#39;s Brew (@bjornsbrew) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-09-14T21:53:04+00:00">Sep 14, 2015 at 2:53pm PDT</time></p></div></blockquote>
+          <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><%= image_tag("background2.jpg") %></div>
+</div>
+
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><%= image_tag("bjorns_logo_small.png") %></h3>
+        <h4>Contact Us</h4>
+        <div class="row">
+          <div class="col s6 grey">
+            Google Maps
+          </div>
+          <div class="col s6 grey darken-1">
+            <a href="https://www.facebook.com/bjorns.brew" class='fa fa-icon fa-3x fa-facebook'></a>
+            <a href="www.facebook.com/bjorns.brew" class='fa fa-icon fa-3x fa-instagram'></a>
+            Email
+            Address
+            Phone
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax grey darken-1"><%= image_tag("best_friends_sanctuary.jpg") %></div>
+</div>
+
+<footer class="page-footer grey darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Company Bio</h5>
+        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Settings</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    </div>
+  </div>
+</footer>

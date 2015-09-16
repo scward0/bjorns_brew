@@ -1,0 +1,14 @@
+
+<%= form_for @pet_of_the_week do |f| %>
+  <h2>Lets hear about your pet!</h2>
+  <%= f.label("Upload a Picture!") %>
+  <%= f.file_field :avatar %>
+  <br>
+  <%= f.label("Whats his/her name?") %>
+  <%= f.text_field :name, placeholder: "Jack" %>
+  <%= f.label("Whats his/her age?") %>
+  <%= f.text_field :age, placeholder: "12" %>
+  <%= f.label("Lets hear a description!") %>
+  <%= f.text_area :description, placeholder: "Jack is a labradoodle who loves to sit around and eat all of our food" %>
+  <%= f.submit "Submit", class: "modal-action modal-close waves-effect waves-green btn-flat" %>
+<% end %>
